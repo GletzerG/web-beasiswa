@@ -65,18 +65,16 @@
     </div>
     <div class="carousel-item">
         <img class="d-block w-100" src="uploads/gambar2.png" alt="Second slide">
-    <div class="carousel-caption d-none d-md-block">
-        <h5>Lorem Ipsum</h5>
-        <p>Dolor sit amet consetrour</p>
-    </div>
-    </div>
+        <div class="carousel-caption d-none d-md-block">
+            <h5>Lorem Ipsum</h5>
+            <p>Dolor sit amet consetrour</p>
+        </div>
     </div>
     <div class="carousel-item">
         <img class="d-block w-100" src="uploads/image.png" alt="Third slide">
         <div class="carousel-caption d-none d-md-block">
             <h5>Lorem Ipsum</h5>
             <p>Dolor sit amet consetrour</p>
-        </div>
         </div>
     </div>
   </div>

@@ -22,3 +22,6 @@ Route::get('/', function () {
 });
 
 Route::get('/dashboard', [DashboardController::class, 'index']);
+Route::get('/persyaratan', [DashboardController::class, 'showPersyaratan']);
+Route::get('/pendaftaran', [DashboardController::class, 'showPendaftaran'])->name('pendaftaran');
+

@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Back\DashboardController;
+use App\Http\Controllers\PendaftaranController;
 
 
 
@@ -24,4 +25,8 @@ Route::get('/', function () {
 Route::get('/dashboard', [DashboardController::class, 'index']);
 Route::get('/persyaratan', [DashboardController::class, 'showPersyaratan']);
 Route::get('/pendaftaran', [DashboardController::class, 'showPendaftaran'])->name('pendaftaran');
+Route::get('/pendaftaran/daerah', [PendaftaranController::class, 'daerah'])->name('pendaftaran.daerah');
+Route::get('/pendaftaran/akademik', [PendaftaranController::class, 'akademik'])->name('pendaftaran.akademik');
+Route::get('/pendaftaran/nonakademik', [PendaftaranController::class, 'nonakademik'])->name('pendaftaran.nonakademik');
+Route::get('/pendaftaran/kurangmampu', [PendaftaranController::class, 'kurangmampu'])->name('pendaftaran.kurangmampu');
 

@@ -13,11 +13,12 @@ return new class extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
-            $table->rememberToken();
+            $table->string('nama');
+            $table->string('nim')->unique(); // Ganti number ke string
+            $table->string('email');
+            $table->string('nomor_hp'); // Ganti number ke string
+            $table->string('program_studi');
+            $table->integer('semester'); // Ganti number ke integer
             $table->timestamps();
         });
     }

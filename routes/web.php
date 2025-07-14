@@ -20,7 +20,9 @@ use App\Http\Controllers\PendaftaranController;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('welcome');
+
+
 
 Route::get('/dashboard', [DashboardController::class, 'index']);
 Route::get('/persyaratan', [DashboardController::class, 'showPersyaratan']);

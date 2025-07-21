@@ -37,19 +37,19 @@
                                     <option value="Manajemen">Manajemen</option>
                                     <option value="Akuntansi">Akuntansi</option>
                                     <option value="Teknik Elektro">Teknik Elektro</option>
-                                    <!-- Tambahkan opsi lain sesuai kebutuhan -->
                                 </select>
                             </div>
                             <div class="mb-3">
                                 <label for="semester" class="form-label">Semester</label>
-                                <input type="number" class="form-control" id="semester" name="semester" min="1" max="9" maxlength="1" required
-                                    oninput="this.value = this.value.slice(0, 1)">
+                                <input type="number" class="form-control" id="semester" name="semester" min="1" max="9"
+                                    maxlength="1" required oninput="this.value = this.value.slice(0, 1)">
                             </div>
                             <div class="mb-3">
                                 <label for="berkas" class="form-label">Upload Berkas (PDF)</label>
-                                <input type="file" class="form-control" id="berkas" name="berkas" accept="application/pdf" required>
+                                <input type="file" class="form-control" id="berkas" name="berkas" accept="application/pdf"
+                                    required>
                             </div>
-                            <button type="submit" class="btn btn-primary w-100">Kirim Pendaftaran</button>
+                            <button type="submit" class="btn btn-dark w-100">Kirim Pendaftaran</button>
                         </form>
                     </div>
                 </div>
@@ -58,29 +58,28 @@
     </div>
 
     <script>
-    document.getElementById('formPendaftaran').addEventListener('submit', function(e) {
-        e.preventDefault();
-        Swal.fire({
-            title: 'Konfirmasi',
-            text: 'Apakah Anda yakin ingin mengirim pendaftaran?',
-            icon: 'question',
-            showCancelButton: true,
-            confirmButtonText: 'Ya, Kirim',
-            cancelButtonText: 'Batal'
-        }).then((result) => {
-            if (result.isConfirmed) {
-                Swal.fire({
-                    title: 'Berhasil!',
-                    text: 'Pendaftaran berhasil dikirim.',
-                    icon: 'success'
-                }).then(() => {
-                    window.location.href = "{{ route('welcome') }}";
-                });
-                // Jika ingin submit ke server, tambahkan AJAX/fetch di sini
-                // this.submit(); // Untuk submit normal
-            }
+        document.getElementById('formPendaftaran').addEventListener('submit', function (e) {
+            e.preventDefault();
+            Swal.fire({
+                title: 'Konfirmasi',
+                text: 'Apakah Anda yakin ingin mengirim pendaftaran?',
+                icon: 'question',
+                showCancelButton: true,
+                confirmButtonText: 'Ya, Kirim',
+                cancelButtonText: 'Batal'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    Swal.fire({
+                        title: 'Berhasil!',
+                        text: 'Pendaftaran berhasil dikirim.',
+                        icon: 'success'
+                    }).then(() => {
+                        window.location.href = "{{ route('welcome') }}";
+                    });
+                    // Tambahkan AJAX/fetch di sini kalau mau proses ke server
+                }
+            });
         });
-    });
     </script>
 
 @endsection

@@ -21,13 +21,10 @@
         color: #f8f9fa;
     }
 
-    .carousel-item a {
-        display: block;
-        width: 100%;
-        height: 100%;
-    }
-
     .carousel-item img {
+        width: 100%;
+        height: 500px;
+        /* Tinggi fix, sesuaikan kebutuhan */
         object-fit: cover;
     }
 </style>
@@ -41,43 +38,44 @@
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
             aria-label="Slide 3"></button>
     </div>
+
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <a href="https://youtu.be/F38EuG2dAyM?si=KgyVny90rYeEqtKQ">
-                <img class="d-block w-100" src="uploads/mobil.png" alt="First slide">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Lorem Ipsum</h5>
-                    <p>Dolor sit amet consetrour</p>
-                </div>
-            </a>
+            <img class="d-block w-100" src="{{ asset('uploads/mobil.png') }}" alt="First slide">
+            <a href="https://youtu.be/F38EuG2dAyM?si=KgyVny90rYeEqtKQ" class="stretched-link"></a>
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Lorem Ipsum</h5>
+                <p>Dolor sit amet consetrour</p>
+            </div>
         </div>
+
         <div class="carousel-item">
-            <a href="https://contoh-link-2.com">
-                <img class="d-block w-100" src="uploads/gambar2.png" alt="Second slide">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Lorem Ipsum</h5>
-                    <p>Dolor sit amet consetrour</p>
-                </div>
-            </a>
+            <img class="d-block w-100" src="{{ asset('uploads/gambar2.png') }}" alt="Second slide">
+            <a href="https://contoh-link-2.com" class="stretched-link"></a>
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Lorem Ipsum</h5>
+                <p>Dolor sit amet consetrour</p>
+            </div>
         </div>
+
         <div class="carousel-item">
-            <a href="https://contoh-link-3.com">
-                <img class="d-block w-100" src="uploads/image.png" alt="Third slide">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Lorem Ipsum</h5>
-                    <p>Dolor sit amet consetrour</p>
-                </div>
-            </a>
+            <img class="d-block w-100" src="{{ asset('uploads/image.png') }}" alt="Third slide">
+            <a href="https://contoh-link-3.com" class="stretched-link"></a>
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Lorem Ipsum</h5>
+                <p>Dolor sit amet consetrour</p>
+            </div>
         </div>
     </div>
+
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
         data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="carousel-control-prev-icon"></span>
         <span class="visually-hidden">Previous</span>
     </button>
     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
         data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="carousel-control-next-icon"></span>
         <span class="visually-hidden">Next</span>
     </button>
 </div>

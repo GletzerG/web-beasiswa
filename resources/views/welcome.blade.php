@@ -42,7 +42,7 @@
 
 
     <!-- Footer-->
-    @include('back.layout.footer')
-    @yield('footer')
+
+
     <!-- Bootstrap core JS-->
 @endsection

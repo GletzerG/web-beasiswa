@@ -39,7 +39,7 @@
                     <a class="nav-link px-lg-3 py-3 py-lg-4" href="about.html">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="btn btn-dark btn-login ms-lg-3" href="#">Login</a>
+                    <a class="btn btn-dark btn-login ms-lg-3" href="login.blade.php">Login</a>
                 </li>
             </ul>
         </div>

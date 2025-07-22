@@ -3,26 +3,17 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Back\DashboardController;
 use App\Http\Controllers\PendaftaranController;
-
-
-
+use App\Http\Controllers\AuthController; // Tambahkan ini
 
 /*
 |--------------------------------------------------------------------------
 | Web Routes
 |--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
 */
 
 Route::get('/', function () {
     return view('welcome');
 })->name('welcome');
-
-
 
 Route::get('/dashboard', [DashboardController::class, 'index']);
 Route::get('/persyaratan', [DashboardController::class, 'showPersyaratan']);
@@ -31,17 +22,20 @@ Route::get('/pendaftaran/daerah', [PendaftaranController::class, 'daerah'])->nam
 Route::get('/pendaftaran/akademik', [PendaftaranController::class, 'akademik'])->name('pendaftaran.akademik');
 Route::get('/pendaftaran/nonakademik', [PendaftaranController::class, 'nonakademik'])->name('pendaftaran.nonakademik');
 Route::get('/pendaftaran/kurangmampu', [PendaftaranController::class, 'kurangmampu'])->name('pendaftaran.kurangmampu');
-Route::get('/auth/login', [DashboardController::class, 'showLoginForm'])->name('login');
+
+// ✅ Route GET untuk nampilin form login
+Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
+
+// ✅ Route POST untuk proses login
+Route::post('/login', [AuthController::class, 'login'])->name('login.post');
 
 Route::get('admin', function() {
     return '<h1>Admin Page</h1>';
 })->middleware(['auth', 'verified', 'role:admin']);
 
-
 Route::get('penulis', function() {
     return '<h1>Penulis Page</h1>';
 })->middleware(['auth', 'verified', 'role:penulis|admin']);
-
 
 Route::get('tulisan', function() {
     return view('tulisan');

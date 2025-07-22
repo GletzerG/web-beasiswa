@@ -23,4 +23,9 @@ class DashboardController extends Controller
     return view('pendaftaran');
 }
 
+    public function showLoginForm()
+    {
+        return view('auth.login');
+    }
+
 }

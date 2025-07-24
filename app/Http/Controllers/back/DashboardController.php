@@ -10,7 +10,7 @@ class DashboardController extends Controller
 {
     public function index()
     {
-        return view('back.dashboard.index');
+        return view('dashboard');
     }
 
     public function showPersyaratan()

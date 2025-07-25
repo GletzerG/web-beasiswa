@@ -36,7 +36,7 @@
                     <a class="nav-link px-lg-3 py-3 py-lg-4" href="http://127.0.0.1:8000">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link px-lg-3 py-3 py-lg-4" href="about.html">About</a>
+                    <a class="nav-link px-lg-3 py-3 py-lg-4" href="http://127.0.0.1:8000/about">About</a>
                 </li>
                 <li class="nav-item">
                     <a class="btn btn-dark btn-login ms-lg-3" href="{{ route('login') }}">Login</a>

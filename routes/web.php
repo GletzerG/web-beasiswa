@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Back\DashboardController;
 use App\Http\Controllers\PendaftaranController;
 use App\Http\Controllers\AuthController;
+use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,6 +23,7 @@ Route::get('/pendaftaran/daerah', [PendaftaranController::class, 'daerah'])->nam
 Route::get('/pendaftaran/akademik', [PendaftaranController::class, 'akademik'])->name('pendaftaran.akademik');
 Route::get('/pendaftaran/nonakademik', [PendaftaranController::class, 'nonakademik'])->name('pendaftaran.nonakademik');
 Route::get('/pendaftaran/kurangmampu', [PendaftaranController::class, 'kurangmampu'])->name('pendaftaran.kurangmampu');
+Route::get('/about', [DashboardController::class, 'about'])->name('about');
 Route::post('/auth/login', [AuthController::class, 'login'])->name('login.post');
 Route::get('/auth/login', [AuthController::class, 'showLoginForm'])->name('login');
 

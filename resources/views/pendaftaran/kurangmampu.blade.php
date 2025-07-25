@@ -1,4 +1,4 @@
-@extends('back.layout.template')
+@extends('back.layout.tamplate-hero')
 
 @section('content')
 

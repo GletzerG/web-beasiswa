@@ -37,33 +37,44 @@
             aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
             aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+            aria-label="Slide 4"></button>
     </div>
 
     <div class="carousel-inner">
         <div class="carousel-item active">
             <img class="d-block w-100" src="{{ asset('uploads/mobil.png') }}" alt="First slide">
-            <a href="https://youtu.be/F38EuG2dAyM?si=KgyVny90rYeEqtKQ" class="stretched-link"></a>
+            <a href="pendaftaran/akademik" class="stretched-link"></a>
             <div class="carousel-caption d-none d-md-block">
-                <h5>Lorem Ipsum</h5>
-                <p>Dolor sit amet consetrour</p>
+                <h5>Pendaftaran Beasiswa Akademik</h5>
+                <p>"Penjelasan Singkat"</p>
             </div>
         </div>
 
         <div class="carousel-item">
             <img class="d-block w-100" src="{{ asset('uploads/gambar2.png') }}" alt="Second slide">
-            <a href="https://contoh-link-2.com" class="stretched-link"></a>
+            <a href="pendaftaran/nonakademik" class="stretched-link"></a>
             <div class="carousel-caption d-none d-md-block">
-                <h5>Lorem Ipsum</h5>
-                <p>Dolor sit amet consetrour</p>
+                <h5>Pendaftaran Beasiswa Non Akademik</h5>
+                <p>"Penjelasan Singkat"</p>
             </div>
         </div>
 
         <div class="carousel-item">
             <img class="d-block w-100" src="{{ asset('uploads/image.png') }}" alt="Third slide">
-            <a href="https://contoh-link-3.com" class="stretched-link"></a>
+            <a href="pendaftaran/daerah" class="stretched-link"></a>
             <div class="carousel-caption d-none d-md-block">
-                <h5>Lorem Ipsum</h5>
-                <p>Dolor sit amet consetrour</p>
+                <h5>Pendaftaran Beasiswa Daerah Operasional</h5>
+                <p>"Penjelasan Singkat"</p>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img class="d-block w-100" src="{{ asset('uploads/njz.jpeg') }}" alt="Fourth slide">
+            <a href="pendaftaran/kurangmampu" class="stretched-link"></a>
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Pendaftaran Beasiswa Kurang Mampu</h5>
+                <p>"Penjelasan Singkat"</p>
             </div>
         </div>
     </div>

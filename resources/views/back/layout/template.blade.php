@@ -7,7 +7,7 @@
     <title>Website Coba-coba</title>
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="{{ asset('assets/favicon.ico') }}" />
+    <link rel="icon" type="image/x-icon" href="{{ asset('/favicon.ico') }}" />
 
     <!-- Font Awesome -->
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>

@@ -8,6 +8,9 @@
                 <!-- Judul Halaman -->
                 <h2 class="post-title">Selamat datang di Dashboard Beasiswa</h2>
 
+                <!-- Divider -->
+                <hr class="my-4" />
+
                 <!-- Paragraf Informasi -->
                 <p class="post-subtitle">
                     Program Beasiswa Pendidikan PT. Antam, Tbk. kepada Siswa SMK merupakan salah satu program Corporate Social

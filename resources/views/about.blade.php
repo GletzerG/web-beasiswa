@@ -29,7 +29,10 @@
                         With years of experience in the industry, we have successfully delivered projects across various sectors,
                         helping clients achieve their goals efficiently.
                     </p>
-                    <a href="https://www.youtube.com/channel/UCMki_UkHb4qSc0qyEcOHHJw" class="btn btn-primary mt-3">Contact Us</a>
+                    <a href="https://www.instagram.com/newjeans_official/" class="btn btn-primary mt-3" target="_blank" rel="noopener noreferrer">
+                        Contact Us
+                    </a>
+
                 </div>
             </div>
         </div>

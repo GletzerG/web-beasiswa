@@ -27,6 +27,7 @@ Route::get('/about', [DashboardController::class, 'about'])->name('about');
 Route::get('/surat', [DashboardController::class, 'surat'])->name('surat');
 Route::post('/auth/login', [AuthController::class, 'login'])->name('login.post');
 Route::get('/auth/login', [AuthController::class, 'showLoginForm'])->name('login');
+Route::get('/register', [AuthController::class, 'showRegistrationForm'])->name('register');
 
 // ✅ Route GET untuk nampilin form login
 Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');

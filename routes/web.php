@@ -24,6 +24,7 @@ Route::get('/pendaftaran/akademik', [PendaftaranController::class, 'akademik'])-
 Route::get('/pendaftaran/nonakademik', [PendaftaranController::class, 'nonakademik'])->name('pendaftaran.nonakademik');
 Route::get('/pendaftaran/kurangmampu', [PendaftaranController::class, 'kurangmampu'])->name('pendaftaran.kurangmampu');
 Route::get('/about', [DashboardController::class, 'about'])->name('about');
+Route::get('/surat', [DashboardController::class, 'surat'])->name('surat');
 Route::post('/auth/login', [AuthController::class, 'login'])->name('login.post');
 Route::get('/auth/login', [AuthController::class, 'showLoginForm'])->name('login');
 

@@ -18,6 +18,11 @@ class DashboardController extends Controller
         return view('about');
     }
 
+    public function surat()
+    {
+        return view('surat');
+    }
+
     public function showPersyaratan()
     {
         return view('persyaratan');

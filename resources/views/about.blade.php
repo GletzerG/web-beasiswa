@@ -17,7 +17,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6 mb-4 mb-md-0">
-                    <img src="uploads/image.png" alt="About Us" class="about-image shadow">
+                    <img src="uploads/tentang.webp" alt="About Us" class="about-image shadow">
                 </div>
                 <div class="col-md-6">
                     <h2 class="mb-3">About Us</h2>

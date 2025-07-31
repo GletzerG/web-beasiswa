@@ -17,7 +17,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6 mb-4 mb-md-0">
-                    <img src="uploads/image.png" alt="About Us" class="about-image shadow">
+                    <img src="uploads/tentang.webp" alt="About Us" class="about-image shadow">
                 </div>
                 <div class="col-md-6">
                     <h2 class="mb-3">About Us</h2>
@@ -29,7 +29,10 @@
                         With years of experience in the industry, we have successfully delivered projects across various sectors,
                         helping clients achieve their goals efficiently.
                     </p>
-                    <a href="https://www.youtube.com/channel/UCMki_UkHb4qSc0qyEcOHHJw" class="btn btn-primary mt-3">Contact Us</a>
+                    <a href="https://www.instagram.com/newjeans_official/" class="btn btn-primary mt-3" target="_blank" rel="noopener noreferrer">
+                        Contact Us
+                    </a>
+
                 </div>
             </div>
         </div>

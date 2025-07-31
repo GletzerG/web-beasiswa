@@ -12,7 +12,7 @@
             <li>Wajib terdaftar sebagai siswa aktif SMK dari semua jurusan/program keahlian.</li>
             <li>Tidak sedang menerima beasiswa pendidikan dari lembaga/instansi/yayasan lain, dibuktikan dengan surat pernyataan bermaterai dari calon penerima beasiswa.</li>
             <li>Tidak sedang dikenakan sanksi pelanggaran tata tertib sekolah, dibuktikan dengan surat pernyataan bermaterai.</li>
-            <li>Tidak sedang dalahukum atau terlibat pelanggaran hukum lainnya, dibuktikan dengan surat pernyataan bermaterai.</li>
+            <li>Tidak sedang dalahukum atau mterlibat pelanggaran hukum lainnya, dibuktikan dengan surat pernyataan bermaterai.</li>
             <li>Proses seleksi dilakukan berdasarkan peringkat dan kelengkapan persyaratan yang telah ditentukan.</li>
         </ul>
         <p><strong>Ketentuan Persyaratan Khusus:</strong></p>

@@ -44,7 +44,7 @@
     <div class="carousel-inner">
         <div class="carousel-item active">
             <img class="d-block w-100" src="{{ asset('uploads/mobil.png') }}" alt="First slide">
-            <a href="pendaftaran/akademik" class="stretched-link"></a>
+            <a href="https://forms.gle/V4euvswe2in3QMdj8" class="stretched-link"></a>
             <div class="carousel-caption d-none d-md-block">
                 <h5>Pendaftaran Beasiswa Akademik</h5>
                 <p>"Penjelasan Singkat"</p>
@@ -53,7 +53,7 @@
 
         <div class="carousel-item">
             <img class="d-block w-100" src="{{ asset('uploads/gambar2.png') }}" alt="Second slide">
-            <a href="pendaftaran/nonakademik" class="stretched-link"></a>
+            <a href="https://forms.gle/V4euvswe2in3QMdj8" class="stretched-link"></a>
             <div class="carousel-caption d-none d-md-block">
                 <h5>Pendaftaran Beasiswa Non Akademik</h5>
                 <p>"Penjelasan Singkat"</p>
@@ -62,7 +62,7 @@
 
         <div class="carousel-item">
             <img class="d-block w-100" src="{{ asset('uploads/image.png') }}" alt="Third slide">
-            <a href="pendaftaran/daerah" class="stretched-link"></a>
+            <a href="https://forms.gle/V4euvswe2in3QMdj8" class="stretched-link"></a>
             <div class="carousel-caption d-none d-md-block">
                 <h5>Pendaftaran Beasiswa Daerah Operasional</h5>
                 <p>"Penjelasan Singkat"</p>
@@ -71,7 +71,7 @@
 
         <div class="carousel-item">
             <img class="d-block w-100" src="{{ asset('uploads/njz.jpeg') }}" alt="Fourth slide">
-            <a href="pendaftaran/kurangmampu" class="stretched-link"></a>
+            <a href="https://forms.gle/V4euvswe2in3QMdj8" class="stretched-link"></a>
             <div class="carousel-caption d-none d-md-block">
                 <h5>Pendaftaran Beasiswa Kurang Mampu</h5>
                 <p>"Penjelasan Singkat"</p>

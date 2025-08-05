@@ -5,6 +5,9 @@ use App\Http\Controllers\Back\DashboardController;
 use App\Http\Controllers\PendaftaranController;
 use App\Http\Controllers\AuthController;
 use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
+use App\Http\Controllers\AdminBeasiswaController;
+use App\Http\Controllers\AdminPendaftarController;
+use App\Http\Controllers\AdminPendaftaranController;
 
 /*
 |--------------------------------------------------------------------------
@@ -40,6 +43,9 @@ Route::post('/login', [AuthController::class, 'login']);
 Route::get('/register', [AuthController::class, 'showRegister'])->name('register');
 Route::post('/register', [AuthController::class, 'register']);
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
+Route::get('/admin/beasiswa', [AdminBeasiswaController::class, 'index']);
+Route::get('/admin/pendaftar', [AdminPendaftarController::class, 'index']);
+Route::get('/admin/pendaftar', [AdminPendaftaranController::class, 'index'])->name('admin.pendaftar.index');
 
 // Pendaftar Routes
 Route::get('/beasiswa/{beasiswa}/daftar', [PendaftarController::class, 'create'])->name('pendaftar.create');

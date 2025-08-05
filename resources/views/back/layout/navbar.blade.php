@@ -1,6 +1,6 @@
 <style>
     #mainNav {
-        position: sticky;
+        position: fixed;
         top: 0;
         z-index: 1030;
         background-color: #fff;

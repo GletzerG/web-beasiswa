@@ -12,11 +12,16 @@ use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 |--------------------------------------------------------------------------
 */
 
+Route::get('/', [HomeController::class, 'index'])->name('home');
+
+
 Route::get('/', function () {
     return view('welcome');
 })->name('welcome');
 
-Route::get('/dashboard', [DashboardController::class, 'index']);
+Route::get('/dashboard', function () {
+    return view('admin.dashboard');
+})->middleware('auth');
 Route::get('/persyaratan', [DashboardController::class, 'showPersyaratan']);
 Route::get('/pendaftaran', [DashboardController::class, 'showPendaftaran'])->name('pendaftaran');
 Route::get('/pendaftaran/daerah', [PendaftaranController::class, 'daerah'])->name('pendaftaran.daerah');
@@ -28,6 +33,27 @@ Route::get('/surat', [DashboardController::class, 'surat'])->name('surat');
 Route::post('/auth/login', [AuthController::class, 'login'])->name('login.post');
 Route::get('/auth/login', [AuthController::class, 'showLoginForm'])->name('login');
 Route::get('/register', [AuthController::class, 'showRegistrationForm'])->name('register');
+Route::post('/login', [AuthController::class, 'login'])->name('login');
+Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
+Route::get('/login', [AuthController::class, 'showLogin'])->name('login');
+Route::post('/login', [AuthController::class, 'login']);
+Route::get('/register', [AuthController::class, 'showRegister'])->name('register');
+Route::post('/register', [AuthController::class, 'register']);
+Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
+
+// Pendaftar Routes
+Route::get('/beasiswa/{beasiswa}/daftar', [PendaftarController::class, 'create'])->name('pendaftar.create');
+Route::post('/beasiswa/{beasiswa}/daftar', [PendaftarController::class, 'store'])->name('pendaftar.store');
+
+// Admin Routes
+Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () {
+    Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+    
+    Route::resource('beasiswa', AdminBeasiswaController::class);
+    Route::resource('pendaftar', AdminPendaftarController::class)->except(['create', 'store', 'edit', 'update']);
+    Route::patch('/pendaftar/{pendaftar}/status', [AdminPendaftarController::class, 'updateStatus'])->name('pendaftar.update-status');
+});
+// Admin Routes
 
 // ✅ Route GET untuk nampilin form login
 Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
@@ -45,4 +71,5 @@ Route::get('penulis', function() {
 
 Route::get('tulisan', function() {
     return view('tulisan');
+    
 })->middleware(['auth', 'verified', 'role_or_permission:lihat-tulisan|admin']);

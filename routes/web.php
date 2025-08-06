@@ -5,9 +5,9 @@ use App\Http\Controllers\Back\DashboardController;
 use App\Http\Controllers\PendaftaranController;
 use App\Http\Controllers\AuthController;
 use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
-use App\Http\Controllers\AdminBeasiswaController;
-use App\Http\Controllers\AdminPendaftarController;
 use App\Http\Controllers\AdminPendaftaranController;
+use App\Http\Controllers\Admin\BeasiswaController as AdminBeasiswaController;
+use App\Http\Controllers\Admin\PendaftarController as AdminPendaftarController;
 
 /*
 |--------------------------------------------------------------------------
@@ -46,6 +46,10 @@ Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 Route::get('/admin/beasiswa', [AdminBeasiswaController::class, 'index']);
 Route::get('/admin/pendaftar', [AdminPendaftarController::class, 'index']);
 Route::get('/admin/pendaftar', [AdminPendaftaranController::class, 'index'])->name('admin.pendaftar.index');
+Route::get('/admin/pendaftar', [App\Http\Controllers\Admin\PendaftarController::class, 'index']);
+Route::get('/admin/pendaftar', [App\Http\Controllers\PendaftarController::class, 'index']);
+Route::get('/admin/pendaftar', [AdminPendaftarController::class, 'index']);
+
 
 // Pendaftar Routes
 Route::get('/beasiswa/{beasiswa}/daftar', [PendaftarController::class, 'create'])->name('pendaftar.create');

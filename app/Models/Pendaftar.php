@@ -8,4 +8,26 @@ use Illuminate\Database\Eloquent\Model;
 class Pendaftar extends Model
 {
     use HasFactory;
+
+    protected $table = [
+        'beasiswa_id',
+        'nama_lengkap',
+        'nim',
+        'email',
+        'no_hp',
+        'fakultas',
+        'jurusan',
+        'semester',
+        'ipk',
+        'alasan_mendaftar',
+        'file_transkrip',
+        'file_ktp',
+        'file_kk',
+        'status'
+    ];
+
+    public function beasiswa()
+    {
+        return $this->belongsTo(Beasiswa::class, 'beasiswa_id');
+    }
 }

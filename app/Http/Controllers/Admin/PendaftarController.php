@@ -11,8 +11,8 @@ class PendaftarController extends Controller
 {
     public function index()
     {
-        $pendaftars = Pendaftar::with('beasiswa')->latest()->paginate(10);
-        return view('admin.pendaftaran.index', compact('pendaftars'));
+    $pendaftars = Pendaftar::latest()->paginate(10);        
+    return view('admin.pendaftaran.index', compact('pendaftars'));
     }
 
     public function show(Pendaftar $pendaftar)

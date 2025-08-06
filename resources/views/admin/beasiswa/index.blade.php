@@ -46,25 +46,25 @@
                                 </small>
                             </td>
                             <td>
-                                @if($beasiswa->status == 'aktif')
-                                    @if($beasiswa->isActive())
+
+
                                         <span class="badge bg-success">
                                             <i class="fas fa-circle"></i> Aktif
                                         </span>
-                                    @else
+
                                         <span class="badge bg-warning">
                                             <i class="fas fa-clock"></i> Berakhir
                                         </span>
-                                    @endif
-                                @else
+
+
                                     <span class="badge bg-secondary">
                                         <i class="fas fa-times"></i> Nonaktif
                                     </span>
-                                @endif
+
                             </td>
                             <td>
                                 <span class="badge bg-info">
-                                    {{ $beasiswa->pendaftars->count() }} orang
+
                                 </span>
                             </td>
                             <td>
